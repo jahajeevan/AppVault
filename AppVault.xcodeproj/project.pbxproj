@@ -1,0 +1,87 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* AppVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* AppVaultApp.swift */; };
+		A10000000000000000000002 /* ApplicationMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* ApplicationMatcher.swift */; };
+		A10000000000000000000003 /* ApplicationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* ApplicationServices.swift */; };
+		A10000000000000000000004 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* AuthenticationService.swift */; };
+		A10000000000000000000005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* ContentView.swift */; };
+		A10000000000000000000006 /* EncryptedSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* EncryptedSync.swift */; };
+		A10000000000000000000007 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* KeychainStore.swift */; };
+		A10000000000000000000008 /* LoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* LoginItemService.swift */; };
+		A10000000000000000000009 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* Models.swift */; };
+		A10000000000000000000010 /* PasswordPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* PasswordPrompt.swift */; };
+		A10000000000000000000011 /* PasswordSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* PasswordSecurity.swift */; };
+		A10000000000000000000012 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* SettingsView.swift */; };
+		A10000000000000000000013 /* VaultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* VaultViewModel.swift */; };
+		A10000000000000000000014 /* ProtectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000017 /* ProtectionManager.swift */; };
+		A10000000000000000000015 /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000018 /* LockScreenView.swift */; };
+		A10000000000000000000016 /* AppVaultAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000019 /* AppVaultAssets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* AppVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVaultApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* ApplicationMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMatcher.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* ApplicationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServices.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* EncryptedSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptedSync.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		A20000000000000000000008 /* LoginItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemService.swift; sourceTree = "<group>"; };
+		A20000000000000000000009 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A20000000000000000000010 /* PasswordPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPrompt.swift; sourceTree = "<group>"; };
+		A20000000000000000000011 /* PasswordSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSecurity.swift; sourceTree = "<group>"; };
+		A20000000000000000000012 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20000000000000000000013 /* VaultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000015 /* AppVault.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppVault.entitlements; sourceTree = "<group>"; };
+		A20000000000000000000016 /* AppVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000017 /* ProtectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectionManager.swift; sourceTree = "<group>"; };
+		A20000000000000000000018 /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
+		A20000000000000000000019 /* AppVaultAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppVaultAssets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A30000000000000000000001 = {isa = PBXGroup; children = (A30000000000000000000002 /* Sources */, A30000000000000000000003 /* Configuration */, A30000000000000000000005 /* Assets */, A30000000000000000000004 /* Products */); sourceTree = "<group>"; };
+		A30000000000000000000002 /* Sources */ = {isa = PBXGroup; children = (A20000000000000000000001, A20000000000000000000002, A20000000000000000000003, A20000000000000000000004, A20000000000000000000005, A20000000000000000000006, A20000000000000000000007, A20000000000000000000008, A20000000000000000000009, A20000000000000000000010, A20000000000000000000011, A20000000000000000000012, A20000000000000000000013, A20000000000000000000017, A20000000000000000000018); name = Sources; path = Sources/AppVault; sourceTree = "<group>"; };
+		A30000000000000000000003 /* Configuration */ = {isa = PBXGroup; children = (A20000000000000000000014, A20000000000000000000015); name = Configuration; path = Configuration; sourceTree = "<group>"; };
+		A30000000000000000000005 /* Assets */ = {isa = PBXGroup; children = (A20000000000000000000019); name = Assets; path = Assets; sourceTree = "<group>"; };
+		A30000000000000000000004 /* Products */ = {isa = PBXGroup; children = (A20000000000000000000016); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A40000000000000000000001 /* AppVault */ = {isa = PBXNativeTarget; buildConfigurationList = A50000000000000000000002 /* Build configuration list for PBXNativeTarget "AppVault" */; buildPhases = (A60000000000000000000001 /* Sources */, A60000000000000000000002 /* Frameworks */, A60000000000000000000003 /* Resources */); buildRules = (); dependencies = (); name = AppVault; productName = AppVault; productReference = A20000000000000000000016 /* AppVault.app */; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A70000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2700; LastUpgradeCheck = 2700; TargetAttributes = { A40000000000000000000001 = { CreatedOnToolsVersion = 27.0; }; }; }; buildConfigurationList = A50000000000000000000001 /* Build configuration list for PBXProject "AppVault" */; compatibilityVersion = "Xcode 16.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = A30000000000000000000001; productRefGroup = A30000000000000000000004 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (A40000000000000000000001 /* AppVault */); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60000000000000000000003 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000016); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+/* Begin PBXFrameworksBuildPhase section */
+		A60000000000000000000002 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+/* Begin PBXSourcesBuildPhase section */
+		A60000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001, A10000000000000000000002, A10000000000000000000003, A10000000000000000000004, A10000000000000000000005, A10000000000000000000006, A10000000000000000000007, A10000000000000000000008, A10000000000000000000009, A10000000000000000000010, A10000000000000000000011, A10000000000000000000012, A10000000000000000000013, A10000000000000000000014, A10000000000000000000015); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A80000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; }; name = Debug; };
+		A80000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; }; name = Release; };
+		A80000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ARCHS = "arm64 x86_64"; ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_ENTITLEMENTS = Configuration/AppVault.entitlements; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; CURRENT_PROJECT_VERSION = 1; DEAD_CODE_STRIPPING = NO; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Configuration/Info.plist; MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = 1.0.0; PRODUCT_BUNDLE_IDENTIFIER = com.appvault.desktop; PRODUCT_NAME = AppVault; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_VERSION = 6.0; }; name = Debug; };
+		A80000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ARCHS = "arm64 x86_64"; ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_ENTITLEMENTS = Configuration/AppVault.entitlements; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; CURRENT_PROJECT_VERSION = 1; DEAD_CODE_STRIPPING = YES; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Configuration/Info.plist; MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = 1.0.0; PRODUCT_BUNDLE_IDENTIFIER = com.appvault.desktop; PRODUCT_NAME = AppVault; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_VERSION = 6.0; }; name = Release; };
+/* End XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+		A50000000000000000000001 /* Build configuration list for PBXProject "AppVault" */ = {isa = XCConfigurationList; buildConfigurations = (A80000000000000000000001 /* Debug */, A80000000000000000000002 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A50000000000000000000002 /* Build configuration list for PBXNativeTarget "AppVault" */ = {isa = XCConfigurationList; buildConfigurations = (A80000000000000000000003 /* Debug */, A80000000000000000000004 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A70000000000000000000001 /* Project object */;
+}
