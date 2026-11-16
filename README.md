@@ -1,23 +1,120 @@
-# AppVault
+# 🔐 AppVault
 
-AppVault is an offline-first macOS menu-bar utility that asks for Touch ID and/or a locally configured password when a selected app launches or is reactivated.
+**A privacy-focused macOS application protection utility.**
 
-## Security and privacy
+AppVault is an offline-first macOS menu-bar application that helps protect selected applications using Touch ID and/or a locally configured vault password.
 
-- Protection configuration and salted password verifiers live in the user's Keychain with `kSecAttrAccessibleWhenUnlockedThisDeviceOnly`.
-- AppVault never stores plaintext passwords, reads biometric information, or sends data to a server.
-- Optional sync is intentionally not implemented or enabled. Its boundary is an AES-GCM opaque envelope: a future provider may receive only ciphertext, nonce, and a format version. The encryption key remains in the Keychain; no Supabase service-role credential belongs in this client.
-- No sensitive values are logged.
+## ✨ Features
 
-## Important limitation
+- **Menu Bar Integration** – Quickly monitor and control AppVault.
+- **Protected Applications** – Add, search, and manage applications.
+- **Touch ID Authentication** – Use Apple's native biometric authentication.
+- **Password Protection** – Secure applications with a local vault password.
+- **Individual App Policies** – Configure authentication and grace-period preferences.
+- **Lock Behaviour** – Configure protection when leaving protected applications.
+- **Vault Controls** – Seal and unseal application settings.
+- **Privacy First** – Local-first architecture with Keychain-based storage.
 
-macOS does not let a normal user-space app make an arbitrary application unbypassably locked. A determined user can quit AppVault, launch an executable through another mechanism, or alter the system environment. AppVault provides a practical launch-monitoring deterrent, not parental controls, MDM enforcement, or disk encryption. Use FileVault and separate macOS accounts for stronger boundaries.
+## 🛠️ Technology Stack
 
-## Release checklist (the remaining Xcode work)
+- Swift 6
+- SwiftUI
+- AppKit
+- Apple LocalAuthentication
+- Security / Keychain Services
+- CryptoKit
+- XCTest
 
-1. Create/open the Xcode app target around this package source; attach `Configuration/Info.plist` and `Configuration/AppVault.entitlements`.
-2. For private use, build with the included ad-hoc (`-`) signing configuration; no Apple Developer account is required. macOS may still show a first-launch trust warning for an app copied from another machine.
-3. Run the package tests and test launch monitoring, cancellation, Keychain migration, and Touch ID on physical Apple Silicon and Intel Macs.
-4. If you later distribute outside your own Macs, replace ad-hoc signing with a Developer ID Application certificate, notarize with `notarytool`, staple it, then run `Scripts/create-dmg.sh`. Verify the final DMG on a clean Mac.
+**Platform:** macOS 14+
 
-The script never claims to sign or notarize; it verifies the app it receives before packaging.
+## 🏗️ Architecture
+
+1. User selects applications for protection.
+2. AppVault stores protection configuration locally.
+3. AppVault observes standard macOS application-activity notifications.
+4. When a protected application launches or is reactivated, the authentication flow is presented.
+5. Authentication is handled through Touch ID or the configured vault password.
+
+## 🔒 Security & Privacy
+
+- Passwords are never stored in plaintext.
+- Salted password verifiers are stored in the macOS Keychain.
+- Touch ID is handled by macOS.
+- Sensitive values are not logged.
+- No server connection is required for local protection.
+
+**Important:** AppVault is a practical user-space launch-monitoring deterrent, not an unbypassable operating-system security boundary. It is not a replacement for FileVault, MDM enforcement, or separate macOS user accounts.
+
+Encrypted synchronization is not implemented or enabled.
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/jahajeevan/AppVault.git
+cd AppVault
+```
+
+Build:
+
+```bash
+swift build
+```
+
+Run tests:
+
+```bash
+swift test
+```
+
+Open the Xcode project:
+
+```bash
+open AppVault.xcodeproj
+```
+
+Requires macOS 14+ and Xcode with the Swift 6 toolchain.
+
+## 📂 Project Structure
+
+```text
+AppVault/
+├── AppVault.xcodeproj/
+├── Assets/
+├── Configuration/
+├── Scripts/
+├── Sources/
+│   └── AppVault/
+├── Supabase/
+│   └── migrations/
+├── Tests/
+│   └── AppVaultTests/
+└── Package.swift
+```
+
+## 📦 Distribution
+
+The repository includes a DMG packaging helper. External distribution requires appropriate Developer ID signing, notarization, and validation on a clean Mac.
+
+## 🧪 Validation
+
+Physical-device testing of authentication, application monitoring, Keychain persistence, and cancellation behaviour should be completed for the intended macOS versions before release.
+
+## 👨‍💻 Author
+
+**Jahajeevan V**
+
+Computer Science Undergraduate | Full-Stack Developer | AI & Automation Builder
+
+GitHub: https://github.com/jahajeevan
+
+LinkedIn: https://www.linkedin.com/in/jahajeevan-v-99774a379/
+
+## 📄 License
+
+No license has been added yet. All rights remain reserved unless a license is added.
+
+---
+
+*Built as a macOS privacy and application-security project.*
