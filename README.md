@@ -111,6 +111,28 @@ GitHub: https://github.com/jahajeevan
 
 LinkedIn: https://www.linkedin.com/in/jahajeevan-v-99774a379/
 
+
+## 📸 Application Screenshots
+
+### Menu Bar Integration
+<img src="docs/screenshots/Menu%20Bar%20popup.png" width="600" />
+
+### Protected Applications
+<img src="docs/screenshots/Protected%20apps.png" width="800" />
+
+### Add Protected Application
+<img src="docs/screenshots/Add%20protected%20app.png" width="800" />
+
+### Authentication Settings
+<img src="docs/screenshots/Authentication.png" width="800" />
+
+### Privacy Settings
+<img src="docs/screenshots/Privacy.png" width="800" />
+
+### About AppVault
+<img src="docs/screenshots/About.png" width="800" />
+
+
 ## 📄 License
 
 No license has been added yet. All rights remain reserved unless a license is added.
